@@ -1,0 +1,25 @@
+{
+  "manifest_version": 2,
+  "name": "MoodleAutoPreview",
+  "version": "1.0",
+  "description": "Views compatible files on moodle server instead of downloading",
+  "icons": {
+    "48": "icons/icon.svg",
+    "98": "icons/icon.svg"
+  },
+  "author": "blohshyboi",
+  "homepage_url": "https://github.com/bernawastaken",
+  "permissions": [
+    "activeTab",
+    "tabs",
+    "storage"
+  ],
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.aefcastro.net/moodle/*"],
+      "js": ["autopreview.js"]
+    }
+  ]
+}
+
